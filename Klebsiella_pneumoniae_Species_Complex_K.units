@@ -1,0 +1,8 @@
+unit	cluster
+β-D-GlcpA-(1→4)-α-L-Fucp	gtr1
+α-L-Fucp-(1→3)-β-D-Glcp	gtr2
+β-D-Glcp-(1→4)-β-D-GlcpA	wzy_KL1
+β-D-Manp-(1→4)-α-D-Glcp	gtr3
+α-D-GlcpA-(1→3)-β-D-Manp	gtr4
+α-D-Glcp-(1→3)-β-D-Glcp	gtr5
+β-D-Glcp-(1→4)-β-D-Manp	wzy_KL2

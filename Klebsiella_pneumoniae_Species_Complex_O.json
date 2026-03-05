@@ -1,0 +1,8 @@
+{
+  "version": "3.2.1",
+  "keywords": ["kpsc_o"],
+  "id_threshold": 82.5,
+  "doi": ["TBD"],
+  "contact": {"Kelly Wyres": "kaptive.typing@gmail.com"},
+  "repository": "https://github.com/klebgenomics/KpSC-surface-antigen-loci"
+}
