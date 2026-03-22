@@ -1,8 +1,7 @@
 {
-  "repository": "https://github.com/klebgenomics/KpSC-surface-antigen-loci",
   "organism": "Klebsiella pneumoniae Species Complex",
   "contact": {"Kelly Wyres": "kaptive.typing@gmail.com"},
-  "databases": [
+  "databases": {
     "Klebsiella_pneumoniae_Species_Complex_K": {
       "antigen": "Capsular polysaccharide",
       "prefix": "K",
@@ -21,5 +20,5 @@
       "id_threshold": 82.5,
       "doi": ["TBD"]
     }
-  ]
+  }
 }
