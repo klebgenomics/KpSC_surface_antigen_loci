@@ -1,6 +1,8 @@
 {
   "kpsc_k": {
-    "name": "Klebsiella_pneumoniae_Species_Complex_K",
+    "database": "Klebsiella_pneumoniae_Species_Complex_K.gbk",
+    "logic": "Klebsiella_pneumoniae_Species_Complex_K.logic",
+    "units": "Klebsiella_pneumoniae_Species_Complex_K.units",
     "organism": "Klebsiella pneumoniae Species Complex",
     "contact": {
       "Kelly Wyres": "kaptive.typing@gmail.com"
@@ -15,7 +17,9 @@
     ]
   },
   "kpsc_o": {
-    "name": "Klebsiella_pneumoniae_Species_Complex_O",
+    "database": "Klebsiella_pneumoniae_Species_Complex_O.gbk",
+    "logic": "Klebsiella_pneumoniae_Species_Complex_O.logic",
+    "units": "",
     "organism": "Klebsiella pneumoniae Species Complex",
     "contact": {
       "Kelly Wyres": "kaptive.typing@gmail.com"
