@@ -19,7 +19,6 @@
   "kpsc_o": {
     "database": "Klebsiella_pneumoniae_Species_Complex_O.gbk",
     "logic": "Klebsiella_pneumoniae_Species_Complex_O.logic",
-    "units": "",
     "organism": "Klebsiella pneumoniae Species Complex",
     "contact": {
       "Kelly Wyres": "kaptive.typing@gmail.com"
