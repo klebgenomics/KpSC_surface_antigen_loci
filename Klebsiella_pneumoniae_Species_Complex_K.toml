@@ -1,0 +1,28 @@
+name = "Klebsiella_pneumoniae_Species_Complex_K"
+keyword = "kpsc_k"
+genbank = "Klebsiella_pneumoniae_Species_Complex_K.gbk"
+organism = "Klebsiella pneumoniae Species Complex"
+taxon = 3390273
+antigen = "Capsular polysaccharide"
+pathway = "Wzx/Wzy-dependent"
+prefix = "K"
+version = "3.2.1"
+id_threshold = 82.5
+doi = ["TBD"]
+owner = "klebgenomics"
+repo = "KpSC_surface_antigen_loci"
+branch = "main"
+contact = { "Kelly Wyres" = "kaptive.typing@gmail.com" }
+
+[phenotype_logic]
+"Capsule null" = { loci = ["KL*"], inactive_genes = ['wza','wzb','wzc','wzx','wzy', 'wcaJ*', 'wbaP*'], priority = 100 }
+"K37" = { loci = ["KL22"], inactive_genes = ["atr12"] }
+
+[antigenic_units]
+'β-D-GlcpA-(1→4)-α-L-Fucp' = 'gtr1'
+'α-L-Fucp-(1→3)-β-D-Glcp' = 'gtr2'
+'β-D-Glcp-(1→4)-β-D-GlcpA' = 'wzy_KL1'
+'β-D-Manp-(1→4)-α-D-Glcp' = 'gtr3'
+'α-D-GlcpA-(1→3)-β-D-Manp' = 'gtr4'
+'α-D-Glcp-(1→3)-β-D-Glcp' = 'gtr5'
+'β-D-Glcp-(1→4)-β-D-Manp' = 'wzy_KL2'
