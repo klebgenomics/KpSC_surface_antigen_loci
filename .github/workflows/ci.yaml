@@ -1,0 +1,85 @@
+name: Database CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  auto-version-and-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python Deps
+        run: pip install semver
+
+      - name: Get Changed Files
+        id: changed-files
+        uses: tj-actions/changed-files@v42
+        with:
+          # Only trigger the bump loop if these source files change
+          files: |
+            *.gbk
+            *.logic
+            *.units
+
+      - name: Bump TOMLs and Tag
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: |
+          # 1. Parse commit message for Conventional Commits logic
+          MSG="${{ github.event.head_commit.message }}"
+          if [[ "$MSG" == *"feat!"* ]] || [[ "$MSG" == *"[major]"* ]]; then 
+            BUMP="major"
+          elif [[ "$MSG" == *"feat:"* ]] || [[ "$MSG" == *"feat("* ]] || [[ "$MSG" == *"[minor]"* ]]; then 
+            BUMP="minor"
+          else 
+            BUMP="patch"
+          fi
+          
+          echo "Detected bump type: $BUMP"
+
+          # 2. Configure Git bot
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          BUMPED_DBS=""
+
+          # 3. Loop through changed files
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            
+            # Extract base name (e.g., "Acinetobacter_baumannii_K" from "Acinetobacter_baumannii_K.gbk")
+            DB_NAME=$(basename "$file" | cut -d. -f1)
+            TOML_FILE="${DB_NAME}.toml"
+
+            # Check if TOML exists and we haven't already bumped it in this loop
+            if [[ -f "$TOML_FILE" ]] && [[ ! "$BUMPED_DBS" == *"$DB_NAME"* ]]; then
+              
+              # Run Python script and capture the new version
+              NEW_VER=$(python bump_version.py "$TOML_FILE" "$BUMP")
+              echo "Bumped $DB_NAME to v$NEW_VER"
+              
+              git add "$TOML_FILE"
+              BUMPED_DBS="$BUMPED_DBS $DB_NAME"
+              
+              # Create a scoped tag for this specific database (e.g., Acinetobacter_baumannii_K-v3.2.2)
+              git tag "${DB_NAME}-v${NEW_VER}"
+            fi
+          done
+
+          # 4. Commit and Push everything
+          if [[ -n $(git status -s) ]]; then
+            git commit -m "chore: auto-bump databases [skip ci]"
+            git push origin main
+            git push --tags
+          fi
