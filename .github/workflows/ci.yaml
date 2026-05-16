@@ -31,11 +31,10 @@ jobs:
           # Only trigger the bump loop if these source files change
           files: |
             *.gbk
-
-      - name: Bump TOMLs and Tag
+            
+      - name: Bump TOMLs, Generate Changelog, and Tag
         if: steps.changed-files.outputs.any_changed == 'true'
         run: |
-          # 1. Parse commit message for Conventional Commits logic
           MSG="${{ github.event.head_commit.message }}"
           if [[ "$MSG" == *"feat!"* ]] || [[ "$MSG" == *"[major]"* ]]; then 
             BUMP="major"
@@ -45,39 +44,56 @@ jobs:
             BUMP="patch"
           fi
           
-          echo "Detected bump type: $BUMP"
-
-          # 2. Configure Git bot
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           BUMPED_DBS=""
 
-          # 3. Loop through changed files
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            
-            # Extract base name (e.g., "Acinetobacter_baumannii_K" from "Acinetobacter_baumannii_K.gbk")
             DB_NAME=$(basename "$file" | cut -d. -f1)
             TOML_FILE="${DB_NAME}.toml"
+            CHANGELOG_FILE="${DB_NAME}_CHANGELOG.md"
 
-            # Check if TOML exists and we haven't already bumped it in this loop
             if [[ -f "$TOML_FILE" ]] && [[ ! "$BUMPED_DBS" == *"$DB_NAME"* ]]; then
               
-              # Run Python script and capture the new version
+              # 1. Bump the TOML version
               NEW_VER=$(python bump_version.py "$TOML_FILE" "$BUMP")
               echo "Bumped $DB_NAME to v$NEW_VER"
               
-              git add "$TOML_FILE"
-              BUMPED_DBS="$BUMPED_DBS $DB_NAME"
+              # 2. CHANGELOG GENERATION
+              # Find the previous tag for THIS specific database
+              LAST_TAG=$(git describe --tags --match "${DB_NAME}-v*" --abbrev=0 2>/dev/null || echo "")
               
-              # Create a scoped tag for this specific database (e.g., Acinetobacter_baumannii_K-v3.2.2)
+              # Extract commits that touched this database's files since the last tag
+              if [ -z "$LAST_TAG" ]; then
+                # First release ever: get all commits for these files
+                LOGS=$(git log --pretty=format:"* %s (%h)" -- ${DB_NAME}.*)
+              else
+                # Subsequent releases: get commits since the last tag
+                LOGS=$(git log ${LAST_TAG}..HEAD --pretty=format:"* %s (%h)" -- ${DB_NAME}.*)
+              fi
+
+              # Format the new changelog entry
+              DATE=$(date +%Y-%m-%d)
+              ENTRY="## [v${NEW_VER}] - ${DATE}\n${LOGS}\n\n"
+
+              # Prepend the new entry to the Changelog file
+              if [ -f "$CHANGELOG_FILE" ]; then
+                echo -e "$ENTRY$(cat $CHANGELOG_FILE)" > $CHANGELOG_FILE
+              else
+                echo -e "# Changelog: ${DB_NAME}\n\n$ENTRY" > $CHANGELOG_FILE
+              fi
+              
+              # 3. Stage the files and create the tag
+              git add "$TOML_FILE" "$CHANGELOG_FILE"
+              BUMPED_DBS="$BUMPED_DBS $DB_NAME"
               git tag "${DB_NAME}-v${NEW_VER}"
             fi
           done
 
           # 4. Commit and Push everything
           if [[ -n $(git status -s) ]]; then
-            git commit -m "chore: auto-bump databases [skip ci]"
+            git commit -m "chore: auto-bump and update changelogs [skip ci]"
             git push origin main
             git push --tags
           fi
