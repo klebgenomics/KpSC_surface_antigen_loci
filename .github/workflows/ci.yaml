@@ -22,7 +22,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install Python Deps
-        run: pip install semver
+        run: pip install semver tomlkit
 
       - name: Get Changed Files
         id: changed-files
