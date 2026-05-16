@@ -3,7 +3,8 @@
 [![Database CI/CD Pipeline](https://github.com/klebgenomics/KpSC_surface_antigen_loci/actions/workflows/ci.yaml/badge.svg)](https://github.com/klebgenomics/KpSC_surface_antigen_loci/actions/workflows/ci.yaml)
 
 > [!WARNING]
-> This repository is currently for testing purposes only
+> This repository is currently for testing purposes only.
+> The structure is a monorepo with independent versioning.
 
 ## Database Versioning & Release Workflow 🚀
 
@@ -18,7 +19,7 @@ database-specific release tags.
 The automation script decides how to version a database based on the language used in your commit messages. 
 We follow the Conventional Commits standard.
 
-When you commit changes to a database file (e.g., .gbk, .units, .logic), prefix your commit message with one of the following:
+When you commit changes to a database Genbank file, prefix your commit message with one of the following:
 
 #### Patch Bump 🔨
 
