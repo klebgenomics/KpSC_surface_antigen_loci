@@ -4,7 +4,9 @@
 
 > [!WARNING]
 > This repository is currently for testing purposes only.
-> The structure is a monorepo with independent versioning.
+
+> [!TIP] 
+> The current structure is a monorepo with independent database versioning.
 
 ## Database Versioning & Release Workflow 🚀
 
