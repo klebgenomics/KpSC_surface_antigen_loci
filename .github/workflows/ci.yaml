@@ -31,8 +31,6 @@ jobs:
           # Only trigger the bump loop if these source files change
           files: |
             *.gbk
-            *.logic
-            *.units
 
       - name: Bump TOMLs and Tag
         if: steps.changed-files.outputs.any_changed == 'true'
