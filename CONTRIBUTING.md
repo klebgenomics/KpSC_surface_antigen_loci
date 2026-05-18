@@ -26,7 +26,7 @@ When you commit changes to a database Genbank file, prefix your commit message w
 
 `feat:` - Use this when adding new features, such as adding a new locus, a new glycosidic linkage, or expanding the phenotype logic in a backwards-compatible way.
 
-- Example: `feat: add KL102 locus to Acinetobacter`
+- Example: `feat: add KL102 locus to Klebsiella_pneumoniae_K`
 - Result: `v3.2.1 ➡️ v3.3.0`
 
 #### Major Bump 🧰
@@ -80,7 +80,7 @@ The pipeline will automatically discover the new `.toml` file, register the `fea
 
 #### Updating Multiple Databases at Once ⬆️⬆️
 
-If you make a broad change that affects multiple databases (for example, fixing a shared logic rule across both Acinetobacter and Klebsiella), simply commit them together:
+If you make a broad change that affects multiple databases (for example, fixing a shared logic rule across both Klebsiella_pneumoniae_K and Klebsiella_pneumoniae_O), simply commit them together:
 
 ```bash
 git add *.logic
