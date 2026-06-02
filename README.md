@@ -8,17 +8,13 @@
 > [!TIP] 
 > The current structure is a monorepo with independent database versioning.
 
-This repository houses databases for _in silico_ serotyping of _K. pneumoniae_ Species Complex K and O surface polysaccharides using [Kaptive](https://github.com/klebgenomics/Kaptive). 
+This repository houses databases for _in silico_ typing of _K. pneumoniae_ Species Complex (KpSC) K and O surface polysaccharides using [Kaptive](https://github.com/klebgenomics/Kaptive). The capsule polysaccharide (K) and outer-lipopolysaccharide (O) are major surface antigens and phage binding receptors, making them key targets for novel vaccines, monoclonal antibody and phage therapies targeting KpSC.
 
-Each database comprises two files that are required to run Kaptive:
-1. A multi-genbank file containing each unique locus sequence and its gene annotations.
-2. A metadata file in TOML format, which provides essential information about the database (e.g. version, target organism(s), curator details), plus any special [phenotype logic](https://klebgenomics.github.io/Kaptive/Databases.html#phenotype-logic) that applies to the database.
-
-Please see the [Kaptive docs](https://klebgenomics.github.io/Kaptive/Databases.html#format) for more details on the database file formats.
+Genomic typing approaches have helped reveal extensive K and O polysaccharide variation among natural KpSC populations, and power large scale seroepidemiology analyses. To learn more about genomic analyses and seroepidemiology of KpSC, check out the training materials [here](https://github.com/klebgenomics/KlebNetTrainingSep2025). 
 
 ## What is the _K. pneumoniae_ Species Complex?
 
-The _K. pneumoniae_ Species Complex (KpSC) comprises _K. pneumoniae_ and closely related organisms that cannot be accurately desitinguished by standard biochemical or mass-spectometry-based identification protocols (see table below). We've included the phylogroup numbers in the table below for backwards compatibility with older literature, but these names are no longer recommended for use. See [this review]( https://www.nature.com/articles/s41579-019-0315-1) for an overview of the species complex. 
+The _K. pneumoniae_ Species Complex (KpSC) comprises _K. pneumoniae_ and closely related organisms that cannot be accurately distinguished by standard biochemical or mass-spectometry-based identification protocols (see table below). We've included the phylogroup numbers in the table below for backwards compatibility with older literature, but these names are no longer recommended for use. See [this review]( https://www.nature.com/articles/s41579-019-0315-1) for an overview of the species complex. 
 
 | Species                                       | Kp phylogroup<sup>a</sup> | Kp phylogroup (alternative)<sup>b</sup> | Reference                                                                                                                                                                               |
 |-----------------------------------------------|---------------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -40,7 +36,15 @@ and [Fevre et al. 2005](https://aac.asm.org/content/49/12/5149) prior to
 the identification of *K. variicola* subsp *tropica*, *K.
 quasivariicola* and *K. africana*.
 
-## How are loci defined?
+## Databases
+
+The K and O locus databases each comprise two files that are required to run Kaptive:
+1. A multi-genbank file containing each unique locus sequence and its gene annotations.
+2. A metadata file in TOML format, which provides essential information about the database (e.g. version, target organism(s), curator details), plus any special [phenotype logic](https://klebgenomics.github.io/Kaptive/Databases.html#phenotype-logic) that applies to the database.
+
+Please see the [Kaptive docs](https://klebgenomics.github.io/Kaptive/Databases.html#format) for more details on the database file formats.
+
+### How are loci defined?
 
 Loci are defined by the rules of the [Kaptive typing framework](https://klebgenomics.github.io/Kaptive/Databases.html#what-is-a-locus), which states that **a unique locus should represent a unique set of genes**, with the assumption that this encodes a unique
 polysaccharide structure. In many cases, these unique structures will
@@ -52,18 +56,18 @@ threshold to be considered 'unique'. Some genes (such as the core
 assembly machinery) will be highly similar, however the genes
 responsible for the polysaccharide structural diversity are expected to
 be more variable. **The gene identity threshold for the 
-_KpSC databases is 82.5%.**
+KpSC databases is 82.5%.**
 
 In some cases, specific nucleotide variations within loci and/or additional genes located elsewhere in the genome are known to result in modifications to the resulting polysaccharide structure. Where the impact of these variations or additional genes is well understood, they are captured within the databases using the phenotype logic section of the metadata file and the 'extra genes' entries within the multi-genbank file (see below for examples).
 
-## K locus database
+### K locus database
 
 The KpSC K locus reference database
-(`Klebsiella_pneumoniae_SC_K.gbk`) comprises full-length
+(`Klebsiella_pneumoniae_Species_Complex_K`) comprises full-length
 (*galF* to *ugd*) annotated sequences for each distinct KpSC K
 locus, where available:
 
-- K-loci KL1-KL72, KL74 and KL79-KL82 correspond to the originally defined K-types K1-K72, K74 and K79-K82, respectively.
+- K loci KL1-KL72, KL74 and KL79-KL82 correspond to the originally defined K-types K1-K72, K74 and K79-K82, respectively.
 - KL101 and above were defined from DNA sequence data on the basis of
   gene content, numbered by order of discovery. At the time of discovery, no matched phenotypes were known; however, the polysaccharide structures and/or serotypes corresponding to several of these loci have since been described e.g. serotypes [K102, K112, K122, K136 and K149](https://zenodo.org/records/15742130)).
 
@@ -71,7 +75,7 @@ locus, where available:
 > Insertion sequences (IS) are excluded from this database since we assume that the ancestral sequence was likely IS-free and IS transposase genes are not specific to the K locus.
 > Synthetic IS-free K locus sequences were generated for K loci for which no naturally occurring IS-free variants have been identified to date.
 
-Database versions:
+#### Database versions:
 
 - v0.5.1 and below (previously distributed with Kaptive) include the original KpSC K
   locus databases, as described in [Wyres, K. et al. Microbial Genomics
@@ -103,7 +107,7 @@ Database versions:
   annotations with a variety of homology detection methods to provide a
   more accurate functional description and standardised gene nomenclature.
 
-Changes to the K locus database:
+#### Changes to the K locus database:
 
 | Locus | Change | Reason | Date of change | Version |
 |----|----|----|----|----|
@@ -112,7 +116,7 @@ Changes to the K locus database:
 | KL37 | Removed from the database | Locus is a deletion (atr) variant of KL22 | 22 March 2024 | v 3.0.0 |
 | All | Updated gene names and functional annotations | Database standardisation | March 2026 | v 3.2.0 |
 
-## O locus database
+### O locus database
 
 From v3.1.0, we introduced new O-antigen nomenclature in the
 KpSC O locus database
@@ -160,3 +164,12 @@ these genes to predict antigen (sub)types.
 | O13 | OL13 | O13 | OL13 |
 | O14 | OL14 | OL102 | OL102 |
 | O15 | OL15 | OL104 | OL104 |
+
+## Curators
+These databases were originally developed by [Kelly Wyres](https://wyreslab.com/research-journey-kelly-wyres/), [Kathryn Holt](https://holtlab.net/) and [Ryan Wick](https://www.doherty.edu.au/staff-member/ryan-wick/), and are now maintained by Kelly Wyres, Tom Stanton and [Naoise McGarry](https://research.monash.edu/en/persons/naoise-mcgarry/) (Monash University, Australia).
+
+## Contribute
+If you think you've found a novel K or O locus please [get in touch](mailto:kaptive.typing@gmail.com) so we can add it to the database (with attribution)!
+
+## License
+The databases are distributed under GNU 4.0 public license. 
