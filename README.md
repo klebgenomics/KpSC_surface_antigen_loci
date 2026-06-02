@@ -36,7 +36,7 @@ and [Fevre et al. 2005](https://aac.asm.org/content/49/12/5149) prior to
 the identification of *K. variicola* subsp *tropica*, *K.
 quasivariicola* and *K. africana*.
 
-## Databases
+## Database formats and versions
 
 The K and O locus databases each comprise two files that are required to run Kaptive:
 1. A multi-genbank file containing each unique locus sequence and its gene annotations.
@@ -172,4 +172,4 @@ These databases were originally developed by [Kelly Wyres](https://wyreslab.com/
 If you think you've found a novel K or O locus please [get in touch](mailto:kaptive.typing@gmail.com) so we can add it to the database (with attribution)!
 
 ## License
-The databases are distributed under GNU 4.0 public license. 
+The databases are distributed under [GNU Genral Public license v3.0](https://github.com/klebgenomics/KpSC_surface_antigen_loci/blob/main/LICENSE). 
