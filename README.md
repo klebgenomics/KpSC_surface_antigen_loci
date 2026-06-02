@@ -67,18 +67,9 @@ locus, where available:
 - KL101 and above were defined from DNA sequence data on the basis of
   gene content, numbered by order of discovery. At the time of discovery, no matched phenotypes were known; however, the polysaccharide structures and/or serotypes corresponding to several of these loci have since been described e.g. serotypes [K102, K112, K122, K136 and K149](https://zenodo.org/records/15742130)).
 
-!!! note
-    Insertion sequences (IS) are excluded from this database since we
-    assume that the ancestral sequence was likely IS-free and IS
-    transposase genes are not specific to the K locus.
-
-
-Synthetic IS-free K locus sequences were generated for K loci for which
-no naturally occurring IS-free variants have been identified to date.
-
-!!! note
-    KL156-D1 is a deletion variant included in this database, since no
-    full-length version of this locus has been identified to date.
+> [!Note]
+> Insertion sequences (IS) are excluded from this database since we assume that the ancestral sequence was likely IS-free and IS transposase genes are not specific to the K locus.
+> Synthetic IS-free K locus sequences were generated for K loci for which no naturally occurring IS-free variants have been identified to date.
 
 Database versions:
 
@@ -141,10 +132,8 @@ presence/absence of 'extra genes' (_gml2β_ and _orf8_) elsewhere in the
 chromosome as indicated in the table below. Kaptive therefore looks for
 these genes to predict antigen (sub)types.
 
-!!! note
-    You can find information about the O locus database in
-   versions <3.1.0
-    [here](https://klebgenomics.github.io/Kaptive/Legacy.html#legacy-klebsiella-o-locus-database).
+> [!Note]
+> You can find information about the O locus database in versions <3.1.0 [here](https://klebgenomics.github.io/Kaptive/Legacy.html#legacy-klebsiella-o-locus-database).
 
 
 | New serotype designation | Required genes/loci (implemented in v.3.1+) | Prior designation (v.2.0.8–v.3.0.0b6) | Prior genes/loci (v.2.0.8–v.3.0.0b6) |
