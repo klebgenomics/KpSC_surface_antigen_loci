@@ -12,6 +12,17 @@ This repository houses databases for _in silico_ typing of _K. pneumoniae_ Speci
 
 Genomic typing approaches have helped reveal extensive K and O polysaccharide variation among natural KpSC populations, and power large scale seroepidemiology analyses. To learn more about genomic analyses and seroepidemiology of KpSC, check out the training materials [here](https://github.com/klebgenomics/KlebNetTrainingSep2025). 
 
+## Contents
+- [What is the _K. pneumoniae_ Species Complex?](#what-is-the-k-pneumoniae-species-complex)
+- [Database formats and versions](#database-formats-and-versions)
+  - [How are loci defined?](#how-are-loci-defined)
+  - [K locus database](#k-locus-database)
+  - [O locus database](#o-locus-database)   
+- [Citations](#citations)
+- [Curators](#curators)
+- [Contribute](#contribute)
+- [License](#license)
+
 ## What is the _K. pneumoniae_ Species Complex?
 
 The _K. pneumoniae_ Species Complex (KpSC) comprises _K. pneumoniae_ and closely related organisms that cannot be accurately distinguished by standard biochemical or mass-spectometry-based identification protocols (see table below). We've included the phylogroup numbers in the table below for backwards compatibility with older literature, but these names are no longer recommended for use. See [this review]( https://www.nature.com/articles/s41579-019-0315-1) for an overview of the species complex. 
@@ -35,6 +46,13 @@ The _K. pneumoniae_ Species Complex (KpSC) comprises _K. pneumoniae_ and closely
 and [Fevre et al. 2005](https://aac.asm.org/content/49/12/5149) prior to
 the identification of *K. variicola* subsp *tropica*, *K.
 quasivariicola* and *K. africana*.
+
+> [!WARNING]
+> These databases should not be used for species outside of the KpSC! Using the databases to type other organisms, including other _Klebsiella_ species, may result in errors and low typing rates. 
+
+> [!TIP] 
+> K and O locus databases for the _Klebsiella oxytoca_ Species Complex are available [here](https://github.com/klebgenomics/KoSC-surface-antigen-loci).
+
 
 ## Database formats and versions
 
@@ -165,11 +183,24 @@ these genes to predict antigen (sub)types.
 | O14 | OL14 | OL102 | OL102 |
 | O15 | OL15 | OL104 | OL104 |
 
+## Citations
+
+If you use the K locus database please cite:
+
+Wyres _et al._ 2016. Identification of _Klebsiella_ capsule synthesis loci from whole genome data. Microbial Genomics:2(12) DOI: [https://doi.org/10.1099/mgen.0.000102](https://doi.org/10.1099/mgen.0.000102).
+
+If you use the O locus database please cite:
+
+Wick _et al._ 2018. Kaptive Web: User-friendly capsule and lipopolysaccharide serotype prediction for _Klebsiella_ genomes. Journal of Clinical Microbiology:56(6) DOI: [https://doi.org/10.1128/jcm.00197-18](https://doi.org/10.1128/jcm.00197-18)
+
 ## Curators
+
 These databases were originally developed by [Kelly Wyres](https://wyreslab.com/research-journey-kelly-wyres/), [Kathryn Holt](https://holtlab.net/) and [Ryan Wick](https://www.doherty.edu.au/staff-member/ryan-wick/), and are now maintained by Kelly Wyres, Tom Stanton and [Naoise McGarry](https://research.monash.edu/en/persons/naoise-mcgarry/) (Monash University, Australia).
 
 ## Contribute
+
 If you think you've found a novel K or O locus please [get in touch](mailto:kaptive.typing@gmail.com) so we can add it to the database (with attribution)!
 
 ## License
+
 The databases are distributed under [GNU Genral Public license v3.0](https://github.com/klebgenomics/KpSC_surface_antigen_loci/blob/main/LICENSE). 
