@@ -1,6 +1,6 @@
 # _Klebsiella pneumoniae_ Species Complex surface polysaccharide locus databases
 
-[![Database CI/CD Pipeline](https://github.com/klebgenomics/KpSC_surface_antigen_loci/actions/workflows/release.yaml/badge.svg)](https://github.com/klebgenomics/KpSC_surface_antigen_loci/actions/workflows/release.yaml)
+[![Database CI/CD Pipeline](https://github.com/klebgenomics/KpSC_surface_antigen_loci/actions/workflows/release.yml/badge.svg)](https://github.com/klebgenomics/KpSC_surface_antigen_loci/actions/workflows/release.yml)
 
 This repository houses databases for _in silico_ typing of _K. pneumoniae_ Species Complex (KpSC) K and O surface polysaccharides using [Kaptive](https://github.com/klebgenomics/Kaptive). The capsule polysaccharide (K) and outer-lipopolysaccharide (O) are major surface antigens and phage binding receptors, making them key targets for novel vaccines, monoclonal antibody and phage therapies targeting KpSC.
 
