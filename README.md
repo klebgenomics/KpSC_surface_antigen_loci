@@ -1,12 +1,6 @@
 # _Klebsiella pneumoniae_ Species Complex surface polysaccharide locus databases
 
-[![Database CI/CD Pipeline](https://github.com/klebgenomics/KpSC_surface_antigen_loci/actions/workflows/ci.yaml/badge.svg)](https://github.com/klebgenomics/KpSC_surface_antigen_loci/actions/workflows/ci.yaml)
-
-> [!WARNING]
-> This repository is currently for testing purposes only.
-
-> [!TIP] 
-> The current structure is a monorepo with independent database versioning.
+[![Database CI/CD Pipeline](https://github.com/klebgenomics/KpSC_surface_antigen_loci/actions/workflows/release.yaml/badge.svg)](https://github.com/klebgenomics/KpSC_surface_antigen_loci/actions/workflows/release.yaml)
 
 This repository houses databases for _in silico_ typing of _K. pneumoniae_ Species Complex (KpSC) K and O surface polysaccharides using [Kaptive](https://github.com/klebgenomics/Kaptive). The capsule polysaccharide (K) and outer-lipopolysaccharide (O) are major surface antigens and phage binding receptors, making them key targets for novel vaccines, monoclonal antibody and phage therapies targeting KpSC.
 
@@ -195,7 +189,7 @@ Wick _et al._ 2018. Kaptive Web: User-friendly capsule and lipopolysaccharide se
 
 ## Curators
 
-These databases were originally developed by [Kelly Wyres](https://wyreslab.com/research-journey-kelly-wyres/), [Kathryn Holt](https://holtlab.net/) and [Ryan Wick](https://www.doherty.edu.au/staff-member/ryan-wick/), and are now maintained by Kelly Wyres, Tom Stanton and [Naoise McGarry](https://research.monash.edu/en/persons/naoise-mcgarry/) (Monash University, Australia).
+These databases were originally developed by [Kelly Wyres](https://wyreslab.com/research-journey-kelly-wyres/), [Kathryn Holt](https://holtlab.net/) and [Ryan Wick](https://www.doherty.edu.au/staff-member/ryan-wick/), and are now maintained by Kelly Wyres, [Tom Stanton](https://research.monash.edu/en/persons/tom-stanton/) and [Naoise McGarry](https://research.monash.edu/en/persons/naoise-mcgarry/) (Monash University, Australia).
 
 ## Contribute
 
