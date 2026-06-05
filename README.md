@@ -6,6 +6,12 @@ This repository houses databases for _in silico_ typing of _K. pneumoniae_ Speci
 
 Genomic typing approaches have helped reveal extensive K and O polysaccharide variation among natural KpSC populations, and power large scale seroepidemiology analyses. To learn more about genomic analyses and seroepidemiology of KpSC, check out the training materials [here](https://github.com/klebgenomics/KlebNetTrainingSep2025). 
 
+> [!WARNING]
+> These databases should not be used for species outside of the KpSC! Using the databases to type other organisms, including other _Klebsiella_ species, may result in errors and low typing rates. 
+
+> [!TIP] 
+> K and O locus databases for the _Klebsiella oxytoca_ Species Complex are available [here](https://github.com/klebgenomics/KoSC-surface-antigen-loci).
+
 ## Contents
 - [What is the _K. pneumoniae_ Species Complex?](#what-is-the-k-pneumoniae-species-complex)
 - [Database formats and versions](#database-formats-and-versions)
@@ -19,7 +25,7 @@ Genomic typing approaches have helped reveal extensive K and O polysaccharide va
 
 ## What is the _K. pneumoniae_ Species Complex?
 
-The _K. pneumoniae_ Species Complex (KpSC) comprises _K. pneumoniae_ and closely related organisms that cannot be accurately distinguished by standard biochemical or mass-spectometry-based identification protocols (see table below). We've included the phylogroup numbers in the table below for backwards compatibility with older literature, but these names are no longer recommended for use. See [this review]( https://www.nature.com/articles/s41579-019-0315-1) for an overview of the species complex. 
+The _K. pneumoniae_ Species Complex (KpSC) comprises _K. pneumoniae_ and closely related organisms that cannot be accurately distinguished by standard biochemical or mass-spectometry-based identification protocols (see table and phylogeny below). We've included the phylogroup numbers in the table below for backwards compatibility with older literature, but these names are no longer recommended for use. See [this review]( https://www.nature.com/articles/s41579-019-0315-1) for an overview of the species complex. 
 
 | Species                                       | Kp phylogroup<sup>a</sup> | Kp phylogroup (alternative)<sup>b</sup> | Reference                                                                                                                                                                               |
 |-----------------------------------------------|---------------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -41,11 +47,7 @@ and [Fevre et al. 2005](https://aac.asm.org/content/49/12/5149) prior to
 the identification of *K. variicola* subsp *tropica*, *K.
 quasivariicola* and *K. africana*.
 
-> [!WARNING]
-> These databases should not be used for species outside of the KpSC! Using the databases to type other organisms, including other _Klebsiella_ species, may result in errors and low typing rates. 
-
-> [!TIP] 
-> K and O locus databases for the _Klebsiella oxytoca_ Species Complex are available [here](https://github.com/klebgenomics/KoSC-surface-antigen-loci).
+![Unrooted phylogeneny showing the relationships between Klebsiella species and other selected Enterobacteriales, with KpSC marked](/images/Enterobacteriales_tree_KpSC.png)
 
 
 ## Database formats and versions
