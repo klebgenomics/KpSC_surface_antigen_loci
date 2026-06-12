@@ -57987,9 +57987,8 @@ FEATURES             Location/Qualifiers
                      /note="K type: unknown"
                      /note="annotation edited from original by K. Wyres May 2016
                      - insertion sequences manually removed"
-                     /note="annotations removed for wzx fragments June 2026 by Naoise McGarry"
-
-
+                     /note="annotations removed for wzx fragments June 2026 by 
+                     Naoise McGarry"
                      /db_xref="taxon:573"
      CDS             1..897
                      /gene="galF"
