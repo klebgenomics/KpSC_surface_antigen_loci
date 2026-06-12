@@ -57987,6 +57987,9 @@ FEATURES             Location/Qualifiers
                      /note="K type: unknown"
                      /note="annotation edited from original by K. Wyres May 2016
                      - insertion sequences manually removed"
+                     /note="annotations removed for wzx fragments June 2026 by Naoise McGarry"
+
+
                      /db_xref="taxon:573"
      CDS             1..897
                      /gene="galF"
@@ -58091,39 +58094,8 @@ FEATURES             Location/Qualifiers
                      AHSLWGTLPKSQKSKGTLYLIRNDKEINKIQRRLLEHKKGDDKYVDWGDILTSKDLLMR
                      KLCRKLDGIGGLQISQY"
                      /gene="ptr16"
-     CDS             9063..9251
-                     /locus_tag="KL104_08_wzx_KL30"
-                     /gene="wzx_KL30"
-                     /inference="ab initio prediction:Prodigal:2.50"
-                     /codon_start=1
-                     /transl_table=11
-                     /product="polysaccharide biosynthesis protein"
-                     /db_xref="GI:827347439"
-                     /translation="MVQRYALYFTSHEKLVTSRMHGHIFSCLLSLPNDVIDNAYGKNSG
-                     YFKEWTYDIDGTKLLEE"
-     CDS             9255..9644
-                     /locus_tag="KL104_09_wzx_KL30"
-                     /gene="wzx_KL30"
-                     /inference="ab initio prediction:Prodigal:2.50"
-                     /codon_start=1
-                     /transl_table=11
-                     /product="polysaccharide biosynthesis protein"
-                     /db_xref="GI:827347440"
-                     /translation="MKKDLKCITQVLSVGFSNVLSTFFQAILLTRLLTIEDRGHVQLFI
-                     VNTTIFSSFFISGAGNTIAYCVRDGKKKGYVAILATLSLFLLIGLVVKFSLSNQTYQLL
-                     FFITQVVMLCVIQLTIELLKIYRVV"
-     CDS             9749..10015
-                     /locus_tag="KL104_10_wzx_KL30"
-                     /inference="ab initio prediction:Prodigal:2.50"
-                     /codon_start=1
-                     /transl_table=11
-                     /product="polysaccharide biosynthesis protein"
-                     /db_xref="GI:827347442"
-                     /translation="MVILSNTLSSIMGVYFIYKVMNENNANDDIPRLVFIKYYIKQYAM
-                     QIFGIVTNNMDKYLIGNFTGISALGLYSTAAALTHYPSNFIMS"
-                     /gene="wzx_KL30"
      CDS             10433..11587
-                     /locus_tag="KL104_11_gtr112"
+                     /locus_tag="KL104_08_gtr112"
                      /inference="ab initio prediction:Prodigal:2.50"
                      /codon_start=1
                      /transl_table=11
@@ -58138,7 +58110,7 @@ FEATURES             Location/Qualifiers
                      FSVSKIYENQQFKIDEGVVEKFSSERICNQYESLYKRVLNNGKN"
                      /gene="gtr112"
      CDS             11574..12836
-                     /locus_tag="KL104_12_wzy_KL30"
+                     /locus_tag="KL104_09_wzy_KL30"
                      /inference="ab initio prediction:Prodigal:2.50"
                      /codon_start=1
                      /transl_table=11
@@ -58154,7 +58126,7 @@ FEATURES             Location/Qualifiers
                      LLIFHMLFNRNKKYLKKGSVY"
                      /gene="wzy_KL30"
      CDS             12836..13924
-                     /locus_tag="KL104_13_gtr113"
+                     /locus_tag="KL104_10_gtr113"
                      /inference="ab initio prediction:Prodigal:2.50"
                      /codon_start=1
                      /transl_table=11
@@ -58169,7 +58141,7 @@ FEATURES             Location/Qualifiers
                      SDFNTYKYSQIYIELSKNILGI"
                      /gene="gtr113"
      CDS             13936..15105
-                     /locus_tag="KL104_14_gtr114"
+                     /locus_tag="KL104_11_gtr114"
                      /inference="ab initio prediction:Prodigal:2.50"
                      /codon_start=1
                      /transl_table=11
@@ -58185,7 +58157,7 @@ FEATURES             Location/Qualifiers
                      /gene="gtr114"
      CDS             15121..15882
                      /gene="gtr115"
-                     /locus_tag="KL104_15_gtr115"
+                     /locus_tag="KL104_12_gtr115"
                      /inference="ab initio prediction:Prodigal:2.50"
                      /codon_start=1
                      /transl_table=11
@@ -58198,7 +58170,7 @@ FEATURES             Location/Qualifiers
                      YRALSQPRRLVPRYYRNLKYVLWFLLFRNRA"
      CDS             16118..17362
                      /gene="wzx_KL104"
-                     /locus_tag="KL104_16_wzx_KL104"
+                     /locus_tag="KL104_13_wzx_KL104"
                      /inference="ab initio prediction:Prodigal:2.50"
                      /codon_start=1
                      /transl_table=11
@@ -58213,7 +58185,7 @@ FEATURES             Location/Qualifiers
                      IIKYSGYKYLSYKMTLTSLLSIPFSYVMINRYDVFGAAYCFLVVEVLSCTLLNYFFRSG
                      MILRIHLNVIGLMRR"
      CDS             17647..18525
-                     /locus_tag="KL104_17_glt2"
+                     /locus_tag="KL104_14_glt2"
                      /inference="ab initio prediction:Prodigal:2.50"
                      /codon_start=1
                      /transl_table=11
@@ -58227,7 +58199,7 @@ FEATURES             Location/Qualifiers
                      KQMAEWWEDEY"
                      /gene="glt2"
      CDS             18916..19284
-                     /locus_tag="KL104_18_atr14"
+                     /locus_tag="KL104_15_atr14"
                      /inference="ab initio prediction:Prodigal:2.50"
                      /codon_start=1
                      /transl_table=11
@@ -58239,7 +58211,7 @@ FEATURES             Location/Qualifiers
                      /gene="atr14"
      CDS             19505..20902
                      /gene="wcaJ16"
-                     /locus_tag="KL104_19_wcaJ16"
+                     /locus_tag="KL104_16_wcaJ16"
                      /inference="ab initio prediction:Prodigal:2.50"
                      /codon_start=1
                      /transl_table=11
@@ -58256,7 +58228,7 @@ FEATURES             Location/Qualifiers
                      FINKSAY"
      CDS             21068..22474
                      /gene="gnd"
-                     /locus_tag="KL104_20_gnd"
+                     /locus_tag="KL104_17_gnd"
                      /inference="ab initio prediction:Prodigal:2.50"
                      /codon_start=1
                      /transl_table=11
@@ -58273,7 +58245,7 @@ FEATURES             Location/Qualifiers
                      EGVFHTEWLE"
      CDS             22717..24132
                      /gene="manC"
-                     /locus_tag="KL104_21_manC"
+                     /locus_tag="KL104_18_manC"
                      /inference="ab initio prediction:Prodigal:2.50"
                      /codon_start=1
                      /transl_table=11
@@ -58290,7 +58262,7 @@ FEATURES             Location/Qualifiers
                      DDIIRIKDQYGRC"
      CDS             24155..25525
                      /gene="manB"
-                     /locus_tag="KL104_22_manB"
+                     /locus_tag="KL104_19_manB"
                      /inference="ab initio prediction:Prodigal:2.50"
                      /codon_start=1
                      /transl_table=11
@@ -58306,7 +58278,7 @@ FEATURES             Location/Qualifiers
                      PAAAHIDTTDGISIEYPEWRFNLRTSNTEPVVRLNVESRADTALMNAKTEEILALLK"
      CDS             25689..26855
                      /gene="ugd1"
-                     /locus_tag="KL104_23_ugd1"
+                     /locus_tag="KL104_20_ugd1"
                      /inference="ab initio prediction:Prodigal:2.50"
                      /codon_start=1
                      /transl_table=11
@@ -58768,6 +58740,7 @@ ORIGIN
     26701 tgatgcagga agatgagttc ttcaattccc gcgtcgtgcg cgacctgaat gccttcaaac
     26761 aagaggcgga tgtgatcatc tctaaccgta tggcggaaga gctggcggat gtggcggaca
     26821 aggtttacac ccgcgatctg tttggtaacg attaa
+//
 //
 LOCUS       KR007676               27528 bp    DNA     linear   BCT 08-JUN-2015
 DEFINITION  Klebsiella pneumoniae strain DU4033/04 K locus KL105.
