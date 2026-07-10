@@ -154,7 +154,7 @@ chromosome as indicated in the table below. Kaptive therefore looks for
 these genes to predict antigen (sub)types.
 
 > [!Note]
-> You can find information about the O locus database in versions <3.1.0 [here](https://klebgenomics.github.io/Kaptive/Legacy.html#legacy-klebsiella-o-locus-database).
+> You can find information about the O locus database in versions <3.1.0 [here](https://github.com/klebgenomics/KpSC_surface_antigen_loci/blob/main/Legacy%20Database%20Information%20%E2%80%94%20Kaptive%203.2.0%20documentation.pdf).
 
 
 | New serotype designation | Required genes/loci (implemented in v.3.1+) | Prior designation (v.2.0.8–v.3.0.0b6) | Prior genes/loci (v.2.0.8–v.3.0.0b6) |
