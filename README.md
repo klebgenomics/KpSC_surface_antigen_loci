@@ -20,7 +20,13 @@ Genomic typing approaches have helped reveal extensive K and O polysaccharide va
 - [Database formats and versions](#database-formats-and-versions)
   - [How are loci defined?](#how-are-loci-defined)
   - [K locus database](#k-locus-database)
-  - [O locus database](#o-locus-database)   
+    - [K loci](#k-loci)
+    - [Predicted K types](#predicted-k-types)
+    - [Database versions](#database-versions)
+    - [Changes to the K locus database](#changes-to-the-k-locus-database)   
+  - [O locus database](#o-locus-database)
+    - [O loci](#o-loci)
+    - [Predicted O types](#predicted-o-types)    
 - [Citations](#citations)
 - [Curators](#curators)
 - [Contribute](#contribute)
@@ -57,9 +63,9 @@ quasivariicola* and *K. africana*.
 
 The K and O locus databases each comprise two files that are required to run Kaptive:
 1. A multi-genbank file containing each unique locus sequence and its gene annotations.
-2. A metadata file in TOML format, which provides essential information about the database (e.g. version, target organism(s), curator details), plus any special [phenotype logic](https://klebgenomics.github.io/Kaptive/Databases.html#phenotype-logic) that applies to the database.
+2. A metadata file in TOML format, which provides essential information about the database (e.g. version, target organism(s), curator details), plus any special [phenotype logic](https://klebgenomics.github.io/Kaptive/db/curation.html#phenotype-logic) that applies to the database.
 
-Please see the [Kaptive docs](https://klebgenomics.github.io/Kaptive/Databases.html#format) for more details on the database file formats.
+Please see the [Kaptive docs](https://klebgenomics.github.io/Kaptive/db/curation.html) for more details on the database file formats.
 
 ### How are loci defined?
 
@@ -79,18 +85,31 @@ In some cases, specific nucleotide variations within loci and/or additional gene
 
 ### K locus database
 
-The KpSC K locus reference database
+#### K loci
+
+The KpSC [K locus reference database](https://github.com/klebgenomics/KpSC_surface_antigen_loci/blob/main/Klebsiella_pneumoniae_Species_Complex_K.gbk)
 (`Klebsiella_pneumoniae_Species_Complex_K`) comprises full-length
 (*galF* to *ugd*) annotated sequences for each distinct KpSC K
 locus, where available:
 
-- K loci KL1-KL72, KL74 and KL79-KL82 correspond to the originally defined K-types K1-K72, K74 and K79-K82, respectively.
+- K loci KL1-KL72, KL74 and KL79-KL82 correspond to the loci of the original _Klebsiella_ serotype reference strains (sequences described [here](https://doi.org/10.1038/srep15573)).  K1-K72, K74 and K79-K82, respectively.
 - KL101 and above were defined from DNA sequence data on the basis of
-  gene content, numbered by order of discovery. At the time of discovery, no matched phenotypes were known; however, the polysaccharide structures and/or serotypes corresponding to several of these loci have since been described e.g. serotypes [K102, K112, K122, K136 and K149](https://zenodo.org/records/15742130)).
+  gene content, numbered by order of discovery. At the time of discovery, no matched phenotypes were known. 
 
 > [!Note]
 > Insertion sequences (IS) are excluded from this database since we assume that the ancestral sequence was likely IS-free and IS transposase genes are not specific to the K locus.
 > Synthetic IS-free K locus sequences were generated for K loci for which no naturally occurring IS-free variants have been identified to date.
+
+#### Predicted K types
+
+K phenotypes are annotated in the database for those loci where corresponding serological types and/or polysaccharide structures have been defined. These phenotype predictions are reported in the Kaptive output as the `Best match type`.
+
+- K1-K72, K74 and K79-K82 were defined through serological typing techniques in the 1950s-1970s (see [Edwards and Fife JID 1952](https://doi.org/10.1093/infdis/91.1.92); [Edmunds JID 1954](https://doi.org/10.1093/infdis/94.1.65); [Ørskov and Fife-Asbury Int. J. Syst. Evol. Microbiol. 1977](https://doi.org/10.1099/00207713-27-4-386)) and correspond to K loci KL1-KL72, KL74 and KL79-KL82, respectively.
+- K37 was defined through serological typing (see papers above), and the type strain was subsequently [shown to carry](https://doi.org/10.1038/srep15573) a K locus with high similarity to that of the K22 type strain, with the key difference being a truncation in an acetyltransferase gene that results in loss of acetyl modification from the capsule. Kaptive therefore predicts the K37 phenotype when it detects the KL22 locus with a truncated acetyltransferase gene. 
+- K102, K112, K122, K136 and K149 serotypes were defined more recently in this [Technical Note](https://zenodo.org/records/15742130) and correspond to KL102, KL112, KL122, KL136 and KL149, respectively.
+
+> [!TIP] 
+> Kaptive will report `Best match type` as `Capsule null` when it identifies a truncation in an essential capsule synthesis / assembly gene e.g. _wza_, _wzb_, _wzc_, _wzx_ and/or _wzy_, or an initiating glycosyltransferase gene, _wcaJ_ or _wbaP_.
 
 #### Database versions:
 
@@ -124,7 +143,10 @@ locus, where available:
   annotations with a variety of homology detection methods to provide a
   more accurate functional description and standardised gene nomenclature.
 
-#### Changes to the K locus database:
+> [!Tip]
+> You can see a full list of database versions in this repository [here](https://github.com/klebgenomics/KpSC_surface_antigen_loci/tags). The version displayed/downloaded by default is the most recent version (highest number).
+
+#### Changes to the K locus database
 
 | Locus | Change | Reason | Date of change | Version |
 |----|----|----|----|----|
@@ -135,9 +157,11 @@ locus, where available:
 
 ### O locus database
 
-From v3.1.0, we introduced new O-antigen nomenclature in the
-KpSC O locus database
-(`Klebsiella_pneumoniae_SC_O.gbk`) along wth the publication
+#### O loci
+
+The [O locus database](https://github.com/klebgenomics/KpSC_surface_antigen_loci/blob/main/Klebsiella_pneumoniae_Species_Complex_O.gbk) (`Klebsiella_pneumoniae_SC_O.gbk`) includes the full length annotated sequences for all known KpSC O loci.
+
+From v3.1.0, we introduced new O locus and O antigen nomenclature along with the publication
 of this review: [O-antigen polysaccharides in Klebsiella pneumoniae:
 structures and molecular basis for antigenic
 diversity](https://journals.asm.org/doi/full/10.1128/mmbr.00090-23#T1).
@@ -146,15 +170,12 @@ We have also summarised the O-antigen nomenclature update on the [Wyres
 Lab
 website](http://wyreslab.com/klebsiella-pneumoniae-o-antigen-genetics-structural-diversity-and-nomenclature/).
 
-O locus classification requires some special logic, as the O1 and O2
-serotypes are associated with the same loci and the distinction between
-O1 and each of the defined O2 subtypes (2α, 2β, 2γ) is determined by the
-presence/absence of 'extra genes' (_gml2β_ and _orf8_) elsewhere in the
-chromosome as indicated in the table below. Kaptive therefore looks for
-these genes to predict antigen (sub)types.
+> [!Tip]
+> You can see a full list of database versions in this repository [here](https://github.com/klebgenomics/KpSC_surface_antigen_loci/tags). The version displayed/downloaded by default is the most recent version (highest number).
 
-> [!Note]
-> You can find information about the O locus database in versions <3.1.0 [here](https://github.com/klebgenomics/KpSC_surface_antigen_loci/blob/main/Legacy%20Database%20Information%20%E2%80%94%20Kaptive%203.2.0%20documentation.pdf).
+#### Predicted O types
+
+O polysaccharide structures are known and/or predicted for all O loci; however, O classification requires some special logic. In particular, the O1 and O2 polysaccharides are associated with the same O loci and the distinction between O1 and each of the defined O2 subtypes (2α, 2β, 2γ) is determined by the presence/absence of 'extra genes' (_gml2β_ and _orf8_) elsewhere in the chromosome as indicated in the table below. Kaptive therefore looks for these genes to predict antigen (sub)types. You can find information about the database versions <3.1.0 [here](https://github.com/klebgenomics/KpSC_surface_antigen_loci/blob/main/Legacy%20Database%20Information%20%E2%80%94%20Kaptive%203.2.0%20documentation.pdf).
 
 
 | New serotype designation | Required genes/loci (implemented in v.3.1+) | Prior designation (v.2.0.8–v.3.0.0b6) | Prior genes/loci (v.2.0.8–v.3.0.0b6) |
@@ -181,6 +202,10 @@ these genes to predict antigen (sub)types.
 | O13 | OL13 | O13 | OL13 |
 | O14 | OL14 | OL102 | OL102 |
 | O15 | OL15 | OL104 | OL104 |
+
+> [!Note]
+> O3α and O3β are mannose containing polysaccharides that differ by the number of mannose residues within each polysaccharide repeat unit. The specific genetic determinants driving these length differences are not yet known, so Kaptive reports these O types together.
+
 
 ## Citations
 
