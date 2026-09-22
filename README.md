@@ -67,6 +67,9 @@ The K and O locus databases each comprise two files that are required to run Kap
 
 Please see the [Kaptive docs](https://klebgenomics.github.io/Kaptive/db/curation.html) for more details on the database file formats.
 
+> [!Note] 
+> We use Github tags to mark the database versions. See [here](https://github.com/klebgenomics/KpSC-surface-antigen-loci/tags) for a full list of database versions in this repository.
+
 ### How are loci defined?
 
 Loci are defined by the rules of the [Kaptive typing framework](https://klebgenomics.github.io/Kaptive/Databases.html#what-is-a-locus), which states that **a unique locus should represent a unique set of genes**, with the assumption that this encodes a unique
