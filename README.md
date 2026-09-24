@@ -27,6 +27,9 @@ Genomic typing approaches have helped reveal extensive K and O polysaccharide va
   - [O locus database](#o-locus-database)
     - [O loci](#o-loci)
     - [Predicted O types](#predicted-o-types)    
+- [How to use the databases](#how-to-use-the-databases)
+  - [Using command-line Kaptive](#using-command-line-kaptive)
+  - [Using Kaptive Web](#using-kaptive-web) 
 - [Citations](#citations)
 - [Curators](#curators)
 - [Contribute](#contribute)
@@ -214,7 +217,7 @@ O polysaccharide structures are known and/or predicted for all O loci; however, 
 The databases are designed for typing whole genome assemblies using [Kaptive](https://github.com/klebgenomics/Kaptive/). You can install and run Kaptive via the command-line or upload your assemblies to [Kaptive Web](https://kaptive-web.erc.monash.edu/). Alternatively, you can upload your assemblies to the third-party platform, [Pathogenwatch](https://pathogen.watch/).
 
 > [!Tip]
-> Test data are available [here](https://github.com/klebgenomics/KpSC_surface_antigen_loci/tree/main/test_data). These include six whole genome assemblies downloaded from the [NCBI RefSeq](https://www.ncbi.nlm.nih.gov/refseq/) database (labelled `*.fasta`), plus the corresponding output tables generated via command-line Kaptive (labelled `kpsc_k_results.txt` and `kpsc_o_results.txt`).
+> Test data are available [here](https://github.com/klebgenomics/KpSC_surface_antigen_loci/tree/main/test_data). These include six whole genome assemblies downloaded from the [NCBI RefSeq and Assembly](https://www.ncbi.nlm.nih.gov) databases (labelled `*.fasta`), plus the corresponding output tables generated via command-line Kaptive (labelled `kpsc_k_results.txt` and `kpsc_o_results.txt`).
 
 ### Using command-line Kaptive
 
@@ -305,13 +308,17 @@ For information on the detailed Kaptive results, see the [Kaptive docs](https://
 
 ## Citations
 
-If you use the K locus database please cite:
-
+If you use the **K locus database** please cite:  
 Wyres _et al._ 2016. Identification of _Klebsiella_ capsule synthesis loci from whole genome data. Microbial Genomics:2(12) DOI: [https://doi.org/10.1099/mgen.0.000102](https://doi.org/10.1099/mgen.0.000102).
 
-If you use the O locus database please cite:
+If you use the **O locus database** please cite:  
+Wick _et al._ 2018. Kaptive Web: User-friendly capsule and lipopolysaccharide serotype prediction for _Klebsiella_ genomes. Journal of Clinical Microbiology:56(6) DOI: [https://doi.org/10.1128/jcm.00197-18](https://doi.org/10.1128/jcm.00197-18).
 
-Wick _et al._ 2018. Kaptive Web: User-friendly capsule and lipopolysaccharide serotype prediction for _Klebsiella_ genomes. Journal of Clinical Microbiology:56(6) DOI: [https://doi.org/10.1128/jcm.00197-18](https://doi.org/10.1128/jcm.00197-18)
+If you use command-line **Kaptive** please cite:  
+Stanton _et al._ 2025. Fast and accurate _in silico_ antigen typing with Kaptive 3. Microbial Genomics:11(6):001428 DOI: [https://doi.org/10.1099/mgen.0.001428](https://doi.org/10.1099/mgen.0.001428).
+
+If you use **Kaptive Web** please cite:  
+Wick _et al._ 2018. Kaptive Web: User-friendly capsule and lipopolysaccharide serotype prediction for _Klebsiella_ genomes. Journal of Clinical Microbiology:56(6) DOI: [https://doi.org/10.1128/jcm.00197-18](https://doi.org/10.1128/jcm.00197-18).
 
 ## Curators
 
