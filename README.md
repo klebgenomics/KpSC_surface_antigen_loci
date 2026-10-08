@@ -309,16 +309,16 @@ For information on the detailed Kaptive results, see the [Kaptive docs](https://
 ## Citations
 
 If you use the **K locus database** please cite:  
-Wyres _et al._ 2016. Identification of _Klebsiella_ capsule synthesis loci from whole genome data. Microbial Genomics:2(12) DOI: [https://doi.org/10.1099/mgen.0.000102](https://doi.org/10.1099/mgen.0.000102).
+Wyres _et al._ 2016. Identification of _Klebsiella_ capsule synthesis loci from whole genome data. Microbial Genomics:2(12) DOI: [10.1099/mgen.0.000102](https://doi.org/10.1099/mgen.0.000102).
 
 If you use the **O locus database** please cite:  
-Wick _et al._ 2018. Kaptive Web: User-friendly capsule and lipopolysaccharide serotype prediction for _Klebsiella_ genomes. Journal of Clinical Microbiology:56(6) DOI: [https://doi.org/10.1128/jcm.00197-18](https://doi.org/10.1128/jcm.00197-18).
+Whitfield _et al._ 2025. O-antigen polysaccharides in _Klebsiella pneumoniae_: structures and molecular basis for antigenic diversity. Microbiology and Molecular Biology Reviews: 89(2):e0009023 DOI: [10.1128/mmbr.00090-23](https://doi.org/10.1128/mmbr.00090-23).
 
 If you use command-line **Kaptive** please cite:  
-Stanton _et al._ 2025. Fast and accurate _in silico_ antigen typing with Kaptive 3. Microbial Genomics:11(6):001428 DOI: [https://doi.org/10.1099/mgen.0.001428](https://doi.org/10.1099/mgen.0.001428).
+Stanton _et al._ 2025. Fast and accurate _in silico_ antigen typing with Kaptive 3. Microbial Genomics:11(6):001428 DOI: [10.1099/mgen.0.001428](https://doi.org/10.1099/mgen.0.001428).
 
 If you use **Kaptive Web** please cite:  
-Wick _et al._ 2018. Kaptive Web: User-friendly capsule and lipopolysaccharide serotype prediction for _Klebsiella_ genomes. Journal of Clinical Microbiology:56(6) DOI: [https://doi.org/10.1128/jcm.00197-18](https://doi.org/10.1128/jcm.00197-18).
+Wick _et al._ 2018. Kaptive Web: User-friendly capsule and lipopolysaccharide serotype prediction for _Klebsiella_ genomes. Journal of Clinical Microbiology:56(6) DOI: [10.1128/jcm.00197-18](https://doi.org/10.1128/jcm.00197-18).
 
 ## Curators
 
