@@ -1,5 +1,9 @@
 # Changelog: Klebsiella_pneumoniae_Species_Complex_O
 
+## [v3.3.1] - 2026-10-21
+* patch: correct OL10 annotations (7ce5af0)
+* chore: auto-bump and update changelogs [skip ci] (acd298a)
+
 ## [v3.3.0] - 2026-10-21
 * minor: update KpSC O database with novel loci OL16-OL21 (2231f03)
 * chore: auto-bump and update changelogs [skip ci] (bfd6c6c)
