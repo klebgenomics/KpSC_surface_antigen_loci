@@ -1,5 +1,9 @@
 # Changelog: Klebsiella_pneumoniae_Species_Complex_O
 
+## [v3.3.0] - 2026-10-21
+* minor: update KpSC O database with novel loci OL16-OL21 (2231f03)
+* chore: auto-bump and update changelogs [skip ci] (bfd6c6c)
+
 ## [v3.2.1] - 2026-10-01
 * patch: reorder O phenotype logic by specificity (9cc06a4)
 * fix: antigen name typo in TOML (2e1b805)
