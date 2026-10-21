@@ -1758,7 +1758,6 @@ FEATURES             Location/Qualifiers
                      /note="O type: O4"
                      /note="sequence manually trimmed to removed insertion
                      sequences"
-                     /note="Updated by Naoise McGarry Jan 2026"
                      /db_xref="taxon:573"
                      /organism="Klebsiella pneumoniae"
      gene            complement(1..1797)
@@ -2490,7 +2489,7 @@ FEATURES             Location/Qualifiers
                      /gene="wbbL"
                      /codon_start=1
                      /transl_table=11
-                     /locus_tag="OL10_00001"
+                     /locus_tag="OL10_01_wbbL"
                      /product="hypothetical protein"
                      /inference="ab initio prediction:same species:002006"
                      /translation="MNILASLVLYKHSFQEIELTLDSLLNEKNIDKLVIVDNGSFCTW
@@ -2498,11 +2497,10 @@ FEATURES             Location/Qualifiers
                      CKENSVDLSVPKIIYPNGALQYATKLLPAPFQLFGRRFLSSFFPNINNEYELRNANFN
                      AAFYAPSMSGCFMMVSNNAILQVQGFDLRFFMYLEDVDFSRRISAGNFNVVYCPDSTV
                      VHLSQRKSYHSFKFLFYHMTSAIKYFNKWGWFFDKERRQLNKRCLSSLPTRSE"
-                     /standard_name="wbbL"
      CDS             complement(828..1748)
                      /codon_start=1
                      /transl_table=11
-                     /locus_tag="OL10_00002"
+                     /locus_tag="OL10_02"
                      /product="glycosyltransferase"
                      /inference="ab initio prediction:same species:002006"
                      /translation="MNRSVAILMAVRNGQEYLQPQLDSFLNQTYKNWCLYVSDDGSTD
@@ -2511,11 +2509,10 @@ FEATURES             Location/Qualifiers
                      TMVFNHKARELLMAASTEEMVVHDWSLYQIVSACNGRIYFDRTPGVLYRQHSNNVIGD
                      GRNIFLRVRNFFSSFKGNRADWNKRNKTVLDKIVAHFGENERQVYYNYNNISESRFLK
                      RIYFYIKSGVYHQYKLGTLSTIIYVCVGKM"
-                     /standard_name="OL10_00002"
      CDS             complement(1803..5630)
                      /codon_start=1
                      /transl_table=11
-                     /locus_tag="OL10_00003"
+                     /locus_tag="OL10_03"
                      /product="hydrolase"
                      /inference="ab initio prediction:same species:002006"
                      /translation="MTMINKSMLSRPRKLTFPFGWCGHIPFVSWLVEEMKPGTIVELG
@@ -2541,12 +2538,11 @@ FEATURES             Location/Qualifiers
                      CFIENSVSLQNDNSLVLRHSFVLEKLLSSDDTQIVKYILENATVTPVYKQQRPEELIT
                      KDIRTELQKGCMDFVRDARDIRNTLYPDFSPSLTIADSLYSEFISSCNRKENDFVKKM
                      TLDDDYCGRGLVN"
-                     /standard_name="OL10_00003"
      CDS             complement(5644..7005)
                      /codon_start=1
                      /transl_table=11
                      /gene="wzt"
-                     /locus_tag="OL10_00004"
+                     /locus_tag="OL10_04_wzt"
                      /product="ATP-binding protein Wzt"
                      /EC_number="7.6.2.8"
                      /inference="ab initio prediction:same species:002006"
@@ -2560,12 +2556,11 @@ FEATURES             Location/Qualifiers
                      EVKLRISVKCLKSMFSPIIGFYIKDRLGQTLFGDNTYLSYMDTPLSMQPDDNMDSIFE
                      FNMPILPVGEYSICVAVAEGSQQEHIQHHWIHDAVIFKSHSSSTVTGLVGIPMKNISI
                      SVN"
-                     /standard_name="wzt"
      CDS             complement(6995..7783)
                      /codon_start=1
                      /transl_table=11
                      /gene="wzm"
-                     /locus_tag="OL10_00005"
+                     /locus_tag="OL10_05_wzm"
                      /product="Ttranslocation permease protein Wzm"
                      /db_xref="COG:COG1682"
                      /inference="ab initio prediction:same species:002006"
@@ -2575,12 +2570,11 @@ FEATURES             Location/Qualifiers
                      VFPLGCLPFSIFLSAVFNFFISFIILLIAQLIVFNSVPWTILFFPLLLIPLFLIGFSL
                      IVIFSTIGVYFRDIAQAVPIMITFLMFLSPIFYPLSAIPKSFQDVMMYNPLAFLIENT
                      RDVLIFGKNMSIESYSILYISSIIFYIIAMKIFQKAKKGFADVL"
-                     /standard_name="wzm"
      CDS             complement(7857..8411)
                      /codon_start=1
                      /transl_table=11
                      /gene="rfbC"
-                     /locus_tag="OL10_00006"
+                     /locus_tag="OL10_06_rfbC"
                      /product="dTDP-4-dehydrorhamnose 3,5-epimerase"
                      /EC_number="5.1.3.13"
                      /db_xref="COG:COG1898"
@@ -2590,12 +2584,11 @@ FEATURES             Location/Qualifiers
                      FVQDNHSQSQKGVLRGLHYQLAPHAQGKLVRCVEGEVFDVAVDIRRSSPTFGKWVGAV
                      LSAENKRQLWIPEGFAHGFMALSDTVQFVYKATNYYAPQSERSIIWNDPEIGIDWPAL
                      GDSALSLSEKDLQAHTLANAEVYI"
-                     /standard_name="rfbC"
      CDS             complement(8426..9316)
                      /codon_start=1
                      /transl_table=11
                      /gene="rfbD"
-                     /locus_tag="OL10_00007"
+                     /locus_tag="OL10_07_rfbD"
                      /product="dTDP-4-dehydrorhamnose reductase"
                      /EC_number="1.1.1.133"
                      /db_xref="COG:COG1091"
@@ -2607,12 +2600,11 @@ FEATURES             Location/Qualifiers
                      NFAKTMLRLAGEKETLSIIDDQHGAPTGAELLADCTATAIRETLRNPALAGTYHLVAS
                      GETSWCDYARYVFEVARAHGAELAVQEVKGIPTTAYPTPAKRPLNSRLSNEKFQQAFG
                      VTLPDWRQGVARVVTEVLGK"
-                     /standard_name="rfbD"
      CDS             complement(9348..10217)
                      /codon_start=1
                      /transl_table=11
                      /gene="rfbA"
-                     /locus_tag="OL10_00008"
+                     /locus_tag="OL10_08_rfbA"
                      /product="Glucose-1-phosphate thymidylyltransferase 2"
                      /EC_number="2.7.7.24"
                      /db_xref="COG:COG1209"
@@ -2624,12 +2616,11 @@ FEATURES             Location/Qualifiers
                      PLKPKSDWAVTGLYFYDNNVVEMAKDVKPSARGELEITTLNQMYLEQGDLHVELLGRG
                      FAWLDTGTHDSLMDASQFIHTIEKRQGMKVACLEEIGYRNKWLSAEGVAAQAERLKKT
                      EYGAYLKRLLNER"
-                     /standard_name="rfbA"
      CDS             complement(10231..11295)
                      /codon_start=1
                      /transl_table=11
                      /gene="rfbB"
-                     /locus_tag="OL10_00009"
+                     /locus_tag="OL10_09_rfbB"
                      /product="dTDP-glucose 4,6-dehydratase 2"
                      /EC_number="4.2.1.46"
                      /db_xref="COG:COG1088"
@@ -2642,7 +2633,6 @@ FEATURES             Location/Qualifiers
                      GEQIRDWLYVEDHARALYKVATEGKSGETYNIGGHNERKNIDVVRTICAILDKVVAQK
                      PGNIAHFADLITFVTDRPGHDLRYAIDAAKIQRDLGWVPQETFESGIEKTVHWYLNNQ
                      TWWQRVLDGSYAGERLGLNN"
-                     /standard_name="rfbB"
 ORIGIN      
         1 ttattccgat ctggtgggta atgatgaaag acaacgtttg ttgagttgtc gtctttcttt
        61 atcaaaaaac caaccccact tattgaaata tttaatcgca gaggtcatat gataaaacag
