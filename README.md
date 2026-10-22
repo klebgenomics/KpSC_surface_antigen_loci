@@ -160,6 +160,7 @@ K phenotypes are annotated in the database for those loci where corresponding se
 | KL126 | Sequence update: new sequence from isolate FF923 includes *rmlBADC* genes between *gnd* and *ugd* | Assembly scaffolding error in original sequence from isolate A-003-I-a-1 | 21 July 2020 | v 0.7.1 |
 | KL37 | Removed from the database | Locus is a deletion (atr) variant of KL22 | 22 March 2024 | v 3.0.0 |
 | All | Updated gene names and functional annotations | Database standardisation | March 2026 | v 3.2.0 |
+| KL187-KL210 | 24 novel K loci were added to the database | Database maintenance | October 2026 | v 3.3.0 |
 
 ### O locus database
 
@@ -181,7 +182,7 @@ website](http://wyreslab.com/klebsiella-pneumoniae-o-antigen-genetics-structural
 
 #### Predicted O types
 
-O polysaccharide structures are known and/or predicted for all O loci; however, O classification requires some special logic. In particular, the O1 and O2 polysaccharides are associated with the same O loci and the distinction between O1 and each of the defined O2 subtypes (2α, 2β, 2γ) is determined by the presence/absence of 'extra genes' (_gml2β_ and _orf8_) elsewhere in the chromosome as indicated in the table below. Kaptive therefore looks for these genes to predict antigen (sub)types. You can find information about the database versions <3.1.0 [here](https://github.com/klebgenomics/KpSC_surface_antigen_loci/blob/main/Legacy%20Database%20Information%20%E2%80%94%20Kaptive%203.2.0%20documentation.pdf).
+O polysaccharide structures are known and/or predicted for almost alll O loci; however, O classification requires some special logic. In particular, the O1 and O2 polysaccharides are associated with the same O loci and the distinction between O1 and each of the defined O2 subtypes (2α, 2β, 2γ) is determined by the presence/absence of 'extra genes' (_gml2β_ and _orf8_) elsewhere in the chromosome as indicated in the table below. Kaptive therefore looks for these genes to predict antigen (sub)types. You can find information about the database versions <3.1.0 [here](https://github.com/klebgenomics/KpSC_surface_antigen_loci/blob/main/Legacy%20Database%20Information%20%E2%80%94%20Kaptive%203.2.0%20documentation.pdf).
 
 
 | New serotype designation | Required genes/loci (implemented in v.3.1+) | Prior designation (v.2.0.8–v.3.0.0b6) | Prior genes/loci (v.2.0.8–v.3.0.0b6) |
@@ -208,6 +209,16 @@ O polysaccharide structures are known and/or predicted for all O loci; however, 
 | O13 | OL13 | O13 | OL13 |
 | O14 | OL14 | OL102 | OL102 |
 | O15 | OL15 | OL104 | OL104 |
+| Unknown | OL16 |  |  |
+| Unknown | OL17 |  |  |
+| Unknown | OL18 |  |  |
+| Unknown | OL19 |  |  |
+| Unknown | OL20 |  |  |
+| Unknown | OL21 |  |  |
+
+
+> [!Note]
+> Six novel O loci were defined from DNA sequence data on the basis of gene content, numbered by order of discovery (OL16-OL21). At present, no confirmed phenotypes are known. These loci were added to versions 3.3+ of the database.
 
 > [!Note]
 > O3α and O3β are mannose containing polysaccharides that differ by the number of mannose residues within each polysaccharide repeat unit. The specific genetic determinants driving these length differences are not yet known, so Kaptive reports these O types together.
