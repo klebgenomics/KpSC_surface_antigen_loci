@@ -154,6 +154,7 @@ K phenotypes are annotated in the database for those loci where corresponding se
 > You can see a full list of database versions in this repository [here](https://github.com/klebgenomics/KpSC_surface_antigen_loci/tags). The version displayed/downloaded by default is the most recent version (highest number).
 
 #### Changes to the K locus database
+The table below lists changes to the database to correct errors and/or improve gene annotations.
 
 | Locus | Change | Reason | Date of change | Version |
 |----|----|----|----|----|
