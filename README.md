@@ -148,7 +148,7 @@ K phenotypes are annotated in the database for those loci where corresponding se
   Kenyon. All K-locus genes where thoroughly screened against curated
   annotations with a variety of homology detection methods to provide a
   more accurate functional description and standardised gene nomenclature.
-- v3.3.0 and above include 24 novel K loci (KL187-KL210), identified on the basis of gene content.
+- v3.3.0 and above include 24 novel K loci (KL187-KL210), identified on the basis of gene content from publicly available KpSC genomes.
 
 > [!Tip]
 > You can see a full list of database versions in this repository [here](https://github.com/klebgenomics/KpSC_surface_antigen_loci/tags). The version displayed/downloaded by default is the most recent version (highest number).
@@ -161,7 +161,6 @@ K phenotypes are annotated in the database for those loci where corresponding se
 | KL126 | Sequence update: new sequence from isolate FF923 includes *rmlBADC* genes between *gnd* and *ugd* | Assembly scaffolding error in original sequence from isolate A-003-I-a-1 | 21 July 2020 | v 0.7.1 |
 | KL37 | Removed from the database | Locus is a deletion (atr) variant of KL22 | 22 March 2024 | v 3.0.0 |
 | All | Updated gene names and functional annotations | Database standardisation | March 2026 | v 3.2.0 |
-| KL187-KL210 | 24 novel K loci were added to the database | Database maintenance | October 2026 | v 3.3.0 |
 
 ### O locus database
 
@@ -177,6 +176,8 @@ diversity](https://journals.asm.org/doi/full/10.1128/mmbr.00090-23#T1).
 We have also summarised the O-antigen nomenclature update on the [Wyres
 Lab
 website](http://wyreslab.com/klebsiella-pneumoniae-o-antigen-genetics-structural-diversity-and-nomenclature/).
+
+From v3.3.0, we added six novel loci defined from public genome data on the basis of gene content, numbered by order of discovery (OL16-OL21). At present, no confirmed phenotypes are known. 
 
 > [!Tip]
 > You can see a full list of database versions in this repository [here](https://github.com/klebgenomics/KpSC_surface_antigen_loci/tags). The version displayed/downloaded by default is the most recent version (highest number).
@@ -210,6 +211,10 @@ O polysaccharide structures are known and/or predicted for almost alll O loci; h
 | O13 | OL13 | O13 | OL13 |
 | O14 | OL14 | OL102 | OL102 |
 | O15 | OL15 | OL104 | OL104 |
+
+And novel loci added from v3.3+: 
+| New serotype designation | Required genes/loci (implemented in v.3.3+) | Prior designation (v.2.0.8–v.3.0.0b6) | Prior genes/loci (v.2.0.8–v.3.0.0b6) |
+|----|----|----|----|
 | Unknown | OL16 | - | - |
 | Unknown | OL17 | - | - |
 | Unknown | OL18 | - | - |
@@ -217,9 +222,6 @@ O polysaccharide structures are known and/or predicted for almost alll O loci; h
 | Unknown | OL20 | - | - |
 | Unknown | OL21 | - | - |
 
-
-> [!Note]
-> Six novel O loci were defined from DNA sequence data on the basis of gene content, numbered by order of discovery (OL16-OL21). At present, no confirmed phenotypes are known. These loci were added to versions 3.3+ of the database.
 
 > [!Note]
 > O3α and O3β are mannose containing polysaccharides that differ by the number of mannose residues within each polysaccharide repeat unit. The specific genetic determinants driving these length differences are not yet known, so Kaptive reports these O types together.
