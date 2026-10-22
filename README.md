@@ -209,12 +209,12 @@ O polysaccharide structures are known and/or predicted for almost alll O loci; h
 | O13 | OL13 | O13 | OL13 |
 | O14 | OL14 | OL102 | OL102 |
 | O15 | OL15 | OL104 | OL104 |
-| Unknown | OL16 |  |  |
-| Unknown | OL17 |  |  |
-| Unknown | OL18 |  |  |
-| Unknown | OL19 |  |  |
-| Unknown | OL20 |  |  |
-| Unknown | OL21 |  |  |
+| Unknown | OL16 | - | - |
+| Unknown | OL17 | - | - |
+| Unknown | OL18 | - | - |
+| Unknown | OL19 | - | - |
+| Unknown | OL20 | - | - |
+| Unknown | OL21 | - | - |
 
 
 > [!Note]
