@@ -148,6 +148,7 @@ K phenotypes are annotated in the database for those loci where corresponding se
   Kenyon. All K-locus genes where thoroughly screened against curated
   annotations with a variety of homology detection methods to provide a
   more accurate functional description and standardised gene nomenclature.
+  - v3.3.0 and above include 24 novel K loci (KL187-KL210), identified on the basis of gene content.
 
 > [!Tip]
 > You can see a full list of database versions in this repository [here](https://github.com/klebgenomics/KpSC_surface_antigen_loci/tags). The version displayed/downloaded by default is the most recent version (highest number).
