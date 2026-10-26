@@ -1,5 +1,9 @@
 # Changelog: Klebsiella_pneumoniae_Species_Complex_O
 
+## [v3.3.2] - 2026-10-26
+* patch: update gamma phenotype nomenclature (1f5d02c)
+* chore: auto-bump and update changelogs [skip ci] (0628be8)
+
 ## [v3.3.1] - 2026-10-21
 * patch: correct OL10 annotations (7ce5af0)
 * chore: auto-bump and update changelogs [skip ci] (acd298a)
